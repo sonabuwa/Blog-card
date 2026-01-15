@@ -1,8 +1,7 @@
-import { defineConfig } from "vite";
-import react from "@vitejs/plugin-react";
-import tailwindcss from "tailwindcss";
+import { defineConfig } from 'vite'
+import react from '@vitejs/plugin-react' // remove if not using React
 
-// https://vite.dev/config/
 export default defineConfig({
-  plugins: [react(), tailwindcss()],
-});
+  base: '/Blog-card/', // <-- important for project sites on GitHub Pages
+  plugins: [react()]
+})
